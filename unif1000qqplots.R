@@ -16,3 +16,33 @@ qqplot(0:300/300,a<-replicate( 1e6, max(abs(sort(runif(1000))-0:999/999)) )*10)
 
 sum(a>0.51)
 binom.test(1204,1e5)
+
+
+
+## ここから実行結果
+
+> sum(a>0.5)
+[1] 11798
+> sum(a>0.51)
+[1] 9609
+> binom.test(9609,1e6)
+
+	Exact binomial test
+
+data:  9609 and 1e+06
+number of successes = 9609, number of trials = 1e+06, p-value < 2.2e-16
+alternative hypothesis: true probability of success is not equal to 0.5
+95 percent confidence interval:
+ 0.009418720 0.009802128
+sample estimates:
+probability of success 
+              0.009609 
+
+> 
+> sum(a>0.6)
+[1] 1289
+> sum(a>0.7)
+[1] 76
+> max(a)
+[1] 0.8689204
+> 
