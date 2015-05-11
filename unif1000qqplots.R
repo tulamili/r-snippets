@@ -1,4 +1,5 @@
 library(matlab)
+par(family="HiraMaruProN-W4")
 
 for ( i in 1001:1100 )  {
 	png( paste ("v",i,".png",sep=""),400,400)
